@@ -1,8 +1,11 @@
 import { Router } from 'express'
-import authRouter from './auth.router'
+import { linkController, viewController } from '../controllers'
 
 const router = Router()
 
-router.use('/auth', authRouter)
+router.get('/:shortcut', linkController.redirect)
+
+router.post('/', linkController.create)
+router.get('/', viewController.renderMainPage)
 
 export default router

@@ -1,3 +1,3 @@
-# typescrypt-express-api
+# link-shortener
 
-template for typescript-based express apis with mongoDb and basic JWT authentication
+simple link-shortener written in typescript
